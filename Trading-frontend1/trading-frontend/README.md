@@ -1,70 +1,192 @@
-# Getting Started with Create React App
+# Trading Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A Full-Stack Trading Platform built using **Spring Boot**, **React.js**, and **MySQL** that enables users to register, manage portfolios, buy/sell stocks, track transactions, and monitor market activity through a modern web interface.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+### User Management
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* User Registration
+* User Authentication
+* Secure Login System
+* User Profile Management
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Trading Operations
 
-### `npm test`
+* Buy Stocks
+* Sell Stocks
+* Trade Validation
+* Transaction Recording
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Portfolio Management
 
-### `npm run build`
+* Portfolio Tracking
+* Holdings Overview
+* Trade History
+* Performance Monitoring
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Market Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Stock Information Retrieval
+* Market Data Display
+* Stock Search Functionality
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Security
 
-### `npm run eject`
+* Spring Security Integration
+* Protected API Endpoints
+* Role-Based Access Configuration
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Tech Stack
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Frontend
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* React.js
+* JavaScript
+* HTML5
+* CSS3
+* Axios
 
-## Learn More
+### Backend
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* Java
+* Spring Boot
+* Spring Security
+* Spring Data JPA
+* REST APIs
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Database
 
-### Code Splitting
+* MySQL
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Build Tools
 
-### Analyzing the Bundle Size
+* Maven
+* npm
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Backend
 
-### Advanced Configuration
+```text
+TradingPlatform
+├── config
+│   └── SecurityConfig.java
+├── controller
+│   ├── UserController.java
+│   ├── TradingController.java
+│   └── StockController.java
+├── dto
+├── exception
+├── model
+│   ├── User.java
+│   └── Trade.java
+├── repository
+├── service
+│   ├── UserService.java
+│   ├── TradingService.java
+│   └── StockService.java
+└── TradingPlatformApplication.java
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Frontend
 
-### Deployment
+```text
+src
+├── components
+├── pages
+│   ├── Dashboard
+│   ├── Portfolio
+│   ├── Transactions
+│   ├── Market
+│   ├── Login
+│   └── Register
+├── services
+│   └── api.js
+└── styles
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## REST APIs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### User APIs
+
+* Register User
+* Login User
+* Fetch User Details
+
+### Trading APIs
+
+* Buy Stock
+* Sell Stock
+* View Trade History
+
+### Portfolio APIs
+
+* Portfolio Overview
+* Holdings Summary
+
+### Market APIs
+
+* Stock Information
+* Market Data Retrieval
+
+---
+
+## Installation
+
+### Backend
+
+```bash
+cd TradingPlatform
+mvn spring-boot:run
+```
+
+### Frontend
+
+```bash
+cd trading-frontend
+npm install
+npm start
+```
+
+---
+
+## Learning Outcomes
+
+* Full Stack Application Development
+* Spring Security Implementation
+* RESTful API Design
+* React Component Architecture
+* State Management
+* Frontend-Backend Integration
+* Database Design using JPA
+* Exception Handling
+* Secure Web Application Development
+
+---
+
+## Future Enhancements
+
+* JWT Authentication
+* Real-Time Stock Market Integration
+* Watchlist Feature
+* Price Alerts
+* Trading Analytics Dashboard
+* Docker Deployment
+* Cloud Hosting
+
+---
+
+## Author
+
+**Karthikeya Chukka**
+
+GitHub: https://github.com/karthik7898
