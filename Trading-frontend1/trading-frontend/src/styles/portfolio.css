@@ -1,0 +1,125 @@
+/* Portfolio Styles */
+
+.portfolio-container {
+  padding: 2.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  background: #f8f9fa;
+  min-height: calc(100vh - 80px);
+}
+
+.portfolio-header {
+  margin-bottom: 2.5rem;
+  animation: fadeInDown 0.6s ease-out;
+}
+
+.portfolio-header h1 {
+  font-size: 2.5rem;
+  color: #1a1a2e;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.portfolio-summary {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  animation: slideInUp 0.6s ease-out;
+}
+
+.summary-item {
+  text-align: center;
+  padding: 1rem;
+}
+
+.summary-label {
+  color: #999;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.summary-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+
+table {
+  width: 100%;
+  background: white;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  animation: slideInUp 0.6s ease-out 0.2s both;
+}
+
+/* header cells within the holdings table can be easily themed by changing the
+   --header-bg CSS variable or editing the background property below */
+.holdings-table thead th {
+  --header-bg: rgba(26, 46, 127, 0.512);
+  background: var(--header-bg);
+  color: black;
+  padding: 1.5rem;
+  text-align: left;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+
+  
+td {
+  padding: 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+  color: #333;
+}
+
+tr:hover {
+  background: #f8f9fa;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+.buy {
+  color: #27ae60;
+  font-weight: 600;
+}
+
+.sell {
+  color: #e74c3c;
+  font-weight: 600;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

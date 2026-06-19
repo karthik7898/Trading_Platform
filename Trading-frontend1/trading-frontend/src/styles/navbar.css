@@ -1,0 +1,134 @@
+.navbar {
+  height: 70px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  background: linear-gradient(135deg, #ffffff 0%, #e0e7ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.navbar-nav li {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-nav a {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  font-size: 15px;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.navbar-nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #00d4ff, #0099ff);
+  transition: width 0.3s ease;
+}
+
+.navbar-nav a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.6);
+}
+
+.navbar-nav a:hover::after {
+  width: 100%;
+}
+
+.navbar-logout {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(245, 87, 108, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.navbar-logout:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(245, 87, 108, 0.5);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.navbar-logout:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 20px;
+    height: 60px;
+  }
+
+  .navbar-brand {
+    font-size: 20px;
+  }
+
+  .navbar-nav {
+    gap: 16px;
+  }
+
+  .navbar-nav a {
+    font-size: 13px;
+  }
+
+  .navbar-logout {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}

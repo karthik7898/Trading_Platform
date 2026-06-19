@@ -1,0 +1,175 @@
+/* Transactions Styles */
+
+.transactions-container {
+  padding: 2.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  background: #f8f9fa;
+  min-height: calc(100vh - 80px);
+}
+
+.transactions-header {
+  margin-bottom: 2.5rem;
+  animation: fadeInDown 0.6s ease-out;
+}
+
+.transactions-header h1 {
+  font-size: 2.5rem;
+  color: #1a1a2e;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.transactions-header p {
+  color: #666;
+  font-size: 1rem;
+}
+
+.transactions-filters {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  animation: slideInUp 0.6s ease-out;
+}
+
+.filter-input {
+  padding: 0.75rem 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.filter-input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 10px rgba(102, 126, 234, 0.2);
+}
+
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  animation: slideInUp 0.6s ease-out 0.2s both;
+}
+
+.transactions-table th {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1.5rem;
+  text-align: left;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.9rem;
+}
+
+.transactions-table td {
+  padding: 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+  color: #333;
+}
+
+.transactions-table tr:hover {
+  background-color: #f8f9fa;
+}
+
+.transactions-table tr:last-child td {
+  border-bottom: none;
+}
+
+.transaction-type {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.transaction-type.buy {
+  color: #27ae60;
+}
+
+.transaction-type.sell {
+  color: #e74c3c;
+}
+
+.empty-state {
+  background: white;
+  padding: 3rem;
+  border-radius: 12px;
+  text-align: center;
+  color: #666;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.empty-state p {
+  margin: 0.5rem 0;
+}
+
+.empty-state p:first-child {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+table {
+  width: 100%;
+  background: white;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th {
+  background: #f1f5f9;
+  padding: 12px;
+  text-align: left;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+tr:hover {
+  background: #f9fafb;
+}
+
+.buy {
+  color: #27ae60;
+  font-weight: 600;
+}
+
+.sell {
+  color: #e74c3c;
+  font-weight: 600;
+}
